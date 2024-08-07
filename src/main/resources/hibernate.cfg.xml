@@ -7,7 +7,7 @@
     <session-factory>
         <!-- Database connection settings -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/piet_hibernate_ecom</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/piet_hibernate_ecomm</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">ashwin1234</property>
 
@@ -17,12 +17,9 @@
         <!-- Enable Hibernate's automatic session context management -->
         <property name="hibernate.current_session_context_class">thread</property>
 
-        <!-- Disable the second-level cache -->
-        <!--<property name="hibernate.cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>-->
-
-        <!-- Enable the second-level cache -->
-        <property name="cache.use_second_level_cache">true</property>
-        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+        <!-- Enable Hibernate's second level cache -->
+        <!--<property name="hibernate.cache.use_second_level_cache"> true</property>
+        <property name="hibernate.cache.region.factory_class"> org.hibernate.cache.ehcache.EhCacheRegionFactory </property>-->
 
         <!-- Echo all executed SQL to stdout -->
         <property name="hibernate.show_sql">true</property>
@@ -35,16 +32,23 @@
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.use_sql_comments">true</property>
 
-        <mapping class="org.example.modal.User"/>
+        <!--<mapping class="org.example.modal.User"/>
         <mapping class="org.example.modal.Product"/>
         <mapping class="org.example.modal.Order"/>
-        <mapping class="org.example.modal.OrderItem"/>
+        <mapping class="org.example.modal.OrderItem"/>-->
 
         <!--<mapping class="org.example.relation_test.User"/>
         <mapping class="org.example.relation_test.Address"/>
         <mapping class="org.example.relation_test.Product"/>
         <mapping class="org.example.relation_test.Order"/>
         <mapping class="org.example.relation_test.Category"/>-->
+
+        <mapping class="org.example.modal_ecomm.Product"/>
+        <mapping class="org.example.modal_ecomm.Color"/>
+        <mapping class="org.example.modal_ecomm.Size"/>
+        <mapping class="org.example.modal_ecomm.Category"/>
+        <mapping class="org.example.modal_ecomm.Stock"/>
+
 
     </session-factory>
 </hibernate-configuration>

@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.4.20.Final</version>
+            <version>5.4.24.final</version>
         </dependency>
 
         <!-- JPA API -->
@@ -57,20 +57,11 @@
             <version>2.14.1</version>
         </dependency>
 
-        <!-- Second Level Cache -->
-
-        <dependency>
-            <groupId>net.sf.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-            <version>2.10.3</version>
-        </dependency>
-
-
-
+        <!-- hibernate cache level 2 -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-ehcache</artifactId>
-            <version>5.2.16.Final</version>
+            <version>5.4.24.Final</version>
         </dependency>
 
     </dependencies>
