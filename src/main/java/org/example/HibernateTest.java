@@ -21,6 +21,16 @@ import java.util.List;
     4. hibernate caching
  */
 
+/*
+      1. single table / table per class
+        1. Employee: id, name, age,
+        2. Part Time: id, time, salary, period
+        3. Full Time: id, salary, lab
+
+        Employee: id, name, age, type ( full time / part time),
+
+
+ */
 
 public class HibernateTest
 {
